@@ -4,7 +4,7 @@
   "description": "helloworld",
   "main": "main.js",
   "scripts": {
-    "test": "letsgo"
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",
