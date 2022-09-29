@@ -4,7 +4,7 @@
   "description": "helloworld",
   "main": "main.js",
   "scripts": {
-    "start": "node main.js"
+    "start": "nodemon ./src/main.js"
   },
   "repository": {
     "type": "git",
