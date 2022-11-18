@@ -1,15 +1,19 @@
 version: '2.12'
 
 services:
+ 
   api:
     build:
       context: .
-    container_name: 
+    container_name: laba1
     working_dir: ./
     restart: unless-stopped
     ports:
       - '3000:3000'
-
+    environment:
+    - POSTGRES_PASSWORD=root
+    - POSTGRES_USER=postgres
+    image: postgres:15.1
     volumes:
       - ./:/dockerLab1
       - /dockerLab1/node_modules
