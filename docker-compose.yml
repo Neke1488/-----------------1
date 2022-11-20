@@ -5,8 +5,8 @@ services:
   api:
     build:
       context: .
-    container_name: laba1
-    working_dir: ./
+    container_name: labDocker
+    working_dir: /app
     restart: unless-stopped
     ports:
       - '3000:3000'
@@ -15,5 +15,5 @@ services:
     - POSTGRES_USER=postgres
     image: postgres:15.1
     volumes:
-      - ./:/dockerLab1
-      - /dockerLab1/node_modules
+      - ./app:/app
+      - /app/node_modules

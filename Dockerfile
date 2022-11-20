@@ -1,8 +1,8 @@
 FROM node:16.13
 
-WORKDIR D:\dockerLab1\src
+WORKDIR /app
 
-COPY package*.json ./
+COPY package*.json /app
 
 RUN npm install
 
